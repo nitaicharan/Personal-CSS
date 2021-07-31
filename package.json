@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "server": "live-server --no-browser",
-    "compile": "sass --style expanded --watch src/sass/main.scss src/css/style.css",
-    "build": "copyfiles --up 1 --exclude src/sass src/*  build/",
-    "start": "npm-run-all --parallel server compile"
+    "compile:css": "sass --style expanded sass/main.scss css/style.css",
+    "watch:css": "sass --style expanded --watch src/sass/main.scss build/css/style.css",
+    "copy": "copyfiles index.html favicon.ico assets/* css/* 'javascript/*' build/",
+    "build": "npm-run-all compile:css copy",
+    "start": "npm-run-all --parallel server watch:css"
   },
   "repository": {
     "type": "git",
