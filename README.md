@@ -9,7 +9,7 @@
 <!--[![](PREVIEW.svg)](https://nitaicharan.github.io/Personal-CSS/)-->
 <a href="https://nitaicharan.github.io/Personal-CSS">
   <p align="center">
-    <img style="height: 100px" src="PREVIEW.svg">
+    <img style="height: 100px" src="PREVIEW.png">
   </p>
 </a>
 
