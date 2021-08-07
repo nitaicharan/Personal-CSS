@@ -6,7 +6,7 @@
   "scripts": {
     "server": "live-server --no-browser",
     "compile:css": "sass --style expanded sass/main.scss css/style.css",
-    "watch:css": "sass --style expanded --watch src/sass/main.scss build/css/style.css",
+    "watch:css": "sass --style expanded --watch sass/main.scss css/style.css",
     "copy": "copyfiles index.html favicon.ico assets/* css/* 'javascript/*' build/",
     "build": "npm-run-all compile:css copy",
     "start": "npm-run-all --parallel server watch:css"
